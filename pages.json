@@ -1,17 +1,281 @@
 {
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/singin/login",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				 	"navigationStyle": "custom" ,// 隐藏系统导航栏
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				 	"navigationStyle": "custom" // 隐藏系统导航栏
+				// "navigationBarTitleText": "uni-app"
 			}
 		}
-	],
+        ,{
+            "path" : "pages/singin/signUp",
+            "style" :                                                                                    
+            {
+				 	"navigationStyle": "custom" ,// 隐藏系统导航栏
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/searchUser/searchUser",
+            "style" :                                                                                    
+            {
+               	"navigationStyle": "custom" ,// 隐藏系统导航栏
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white" // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/userCenter",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom" // 隐藏系统导航栏
+            }
+            
+        }
+        ,{
+            "path" : "pages/dynamic/dynamicCenter",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom" // 隐藏系统导航栏
+            }
+            
+        }
+        ,{
+            "path" : "pages/contacts/contactsIndex",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "联系人",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/set/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "设置",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/set/editInfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "信息修改",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/set/editPass",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "密码修改",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/set/feedBack",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "建议反馈",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/set/userProtocol",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "使用协议",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/set/privacyPolicy",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "隐私政策",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/contacts/groupManager",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/chat/userChatDetail",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom",
+                "navigationBarTitleText": "",
+				"backgroundColor": "#f3f3f3",
+				"backgroundColorTop": "#ffffff",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/chat/groupChatDetail",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom",
+                "navigationBarTitleText": "",
+				"backgroundColor": "#f3f3f3",
+				"backgroundColorTop": "#ffffff",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/chat/groupChatSet",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "群组设置",
+				"backgroundColorTop": "#ffffff",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/chat/groupChatAd",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"navigationBarShadow": {
+					"colorType": "grey"
+				},
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/chat/createGroup",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+				"navigationStyle": "custom",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/searchUser/addFriends",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/searchUser/joinGroup",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/searchUser/userDunamicDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+				"navigationStyle": "custom",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/searchUser/userDynamicVideo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+				"navigationStyle": "custom",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/dynamic/sendDynamic",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "发布瞬间",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		// "navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#606060",
+		"selectedColor": "#67cfff",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"fontSize": "12",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/public/navbar/message-def.png",
+				"selectedIconPath": "static/public/navbar/message-active.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/contacts/contactsIndex",
+				"iconPath": "static/public/navbar/friendlist-def.png",
+				"selectedIconPath": "static/public/navbar/friendlist-active.png",
+				"text": "联系人"
+			},
+			{
+				"pagePath": "pages/dynamic/dynamicCenter",
+				"iconPath": "static/public/navbar/friends-def.png",
+				"selectedIconPath": "static/public/navbar/friends-active.png",
+				"text": "关系圈"
+			},
+			{
+				"pagePath": "pages/user/userCenter",
+				"iconPath": "static/public/navbar/user-def.png",
+				"selectedIconPath": "static/public/navbar/user-active.png",
+				"text": "我的"
+			}
+		]
 	},
 	"uniIdRouter": {}
 }
